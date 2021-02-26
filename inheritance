@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+
+class vechile
+{
+  public:
+        int owned = 2;
+};
+
+class acar : public vechile 
+{
+    public:
+        char i= "mustang";
+};
+
+class bcar : public vechile
+{
+    public:
+        char j= "BMW m8";
+};
+int main()
+{
+    acar c1;
+    bcar c2;
+    cout<<"the first car of yours is:"<<c1.i;
+    cout<<"\nThe second car of yours is:"<<c2.j;
+    return 0;
+}
